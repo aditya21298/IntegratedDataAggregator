@@ -1,0 +1,91 @@
+Business Requirement Document (BRD)
+Project Title: Integrated Data Aggregator with Notifications
+________________________________________
+1. Project Overview
+This project is a multi-threaded Java Spring Boot application designed to provide real-time updates and aggregated data in various domains, including weather, commodities, news, blogs, stocks, cricket scores, and music recommendations. It also incorporates a notification system to deliver timely and relevant alerts to the user.
+________________________________________
+2. Objectives
+1.	Deliver personalized, aggregated information across various domains in one application.
+2.	Provide modular and scalable architecture for adding future sub-modules.
+3.	Notify users of critical, time-sensitive, and relevant updates.
+________________________________________
+3. Key Features
+3.1 Weather Updates
+•	Data: Current weather, weekly forecast, cyclone alerts.
+•	Notifications: Alerts for cyclones or severe weather conditions in the user's area.
+3.2 Commodities Prices
+•	Data: Real-time prices of gold, silver, and other commodities.
+•	Notifications: Alerts for significant price changes (e.g., >5% fluctuation).
+3.3 News Aggregator
+•	Data: Top national, international, sports, business, and regional news.
+•	Notifications: Breaking news or high-impact updates in user-preferred categories.
+3.4 Blogs/Journal Articles
+•	Data: Random, detailed, and unique journal blogs for daily reading.
+•	Notifications: Notify when a new blog is available.
+3.5 Stock Market Data
+•	Data: Top 10 performing stocks of the day and market highlights.
+•	Notifications: Market opening/closing updates or significant stock movements.
+3.6 Cricket Live Scores
+•	Data: Real-time cricket match scores and updates.
+•	Notifications: Milestone alerts (e.g., century, 5-wicket haul).
+3.7 Music Recommendations
+•	Data: Recommendations based on user’s liked songs.
+•	Notifications: Daily recommendations for new songs.
+________________________________________
+4. Notifications System
+4.1 Channels
+•	Email Notifications
+•	Push Notifications (future UI)
+•	SMS (optional, critical alerts like cyclones)
+•	In-App Notifications (future feature with UI)
+4.2 Trigger Events
+1.	Weather Alerts: Cyclone or severe weather.
+2.	Commodities: Price fluctuation exceeding threshold.
+3.	News: Breaking news or high-relevance updates.
+4.	Blogs: Availability of a new, recommended blog.
+5.	Stocks: Opening/closing highlights or significant movements.
+6.	Cricket: Milestones during live matches.
+7.	Music: New daily recommendations.
+________________________________________
+5. Functional Requirements
+5.1 Core Modules
+1.	Weather Module: Fetch real-time data and severe weather alerts.
+2.	Commodities Module: Fetch commodity prices and analyze fluctuations.
+3.	News Module: Aggregate news from various categories.
+4.	Blog Module: Fetch detailed journal articles.
+5.	Stocks Module: Retrieve top-performing stocks and daily market highlights.
+6.	Cricket Module: Provide real-time scores and milestones.
+7.	Music Module: Recommend songs based on user preferences.
+5.2 Notifications System
+•	Unified Notification Manager for centralized alert handling.
+•	Integration with delivery services (email, push, SMS).
+•	Configurable preferences for notification types and frequency.
+________________________________________
+6. Non-Functional Requirements
+•	Scalability: Easily add new modules and notification types.
+•	Performance: Fetch data concurrently using multithreading to minimize latency.
+•	Availability: Ensure high uptime and timely notifications.
+•	Extensibility: Future integration with a UI for in-app notifications.
+________________________________________
+7. Success Metrics
+•	Notifications delivered within 5 seconds of trigger events.
+•	Data refreshed every configurable interval (e.g., weather every 30 minutes, stocks every hour).
+•	User satisfaction ratings from initial feedback (future metric).
+________________________________________
+8. Project Scope
+•	Phase 1: Core feature integration with weather, news, and notifications.
+•	Phase 2: Add blogs, stocks, and cricket modules.
+•	Phase 3: Extend music module and introduce advanced notification preferences.
+•	Phase 4: Integrate optional SMS and UI for in-app notifications.
+________________________________________
+9. Constraints
+•	Limited expertise in UI/UX; focus initially on backend development.
+•	Notifications limited to email in Phase 1.
+________________________________________
+10. Deliverables
+1.	Source Code Repository with Module Architecture.
+2.	BRD, Technical Documentation, and Installation Guide.
+3.	Working Modules for Phase 1 Features with Notifications.
+________________________________________
+Would you like assistance with structuring the Git repository or starting with Phase 1 implementation?
+
