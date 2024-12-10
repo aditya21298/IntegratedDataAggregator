@@ -1,0 +1,6 @@
+#Date : 10-02-2024
+* created Spring boot application.
+* Configured git repo
+    Link : https://github.com/aditya21298/IntegratedDataAggregator
+* Created Packages for Weather module.
+* for weather module used h2 instance.
